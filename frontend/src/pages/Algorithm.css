@@ -1,0 +1,619 @@
+/* =========================================================
+   PAPERCheck - Algorithm Page
+   ========================================================= */
+
+.algorithm-page {
+  min-height: 100vh;
+  background: #f5f8fd;
+  color: #182b49;
+}
+
+/* =========================================================
+   MAIN CONTAINER
+   ========================================================= */
+
+.algorithm-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 55px 0 90px;
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.algorithm-header {
+  margin-bottom: 42px;
+}
+
+.algorithm-container > .algorithm-header > span {
+  display: inline-block;
+  color: #2865c7;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.algorithm-container > .algorithm-header > h1 {
+  color: #182b49;
+  font-size: 42px;
+  font-weight: 750;
+  line-height: 1.15;
+  margin: 0 0 16px;
+  letter-spacing: -0.8px;
+}
+
+.algorithm-intro {
+  max-width: 760px;
+  margin: 0;
+  color: #718096;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   ALGORITHM FLOW
+   ========================================================= */
+
+.algorithm-flow {
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    35px
+    minmax(0, 1fr)
+    35px
+    minmax(0, 1fr)
+    35px
+    minmax(0, 1fr)
+    35px
+    minmax(0, 1fr);
+
+  align-items: center;
+  gap: 0;
+  margin: 0 0 30px;
+}
+
+.algorithm-flow .flow-item {
+  min-height: 125px;
+  padding: 22px 15px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.algorithm-flow .flow-item:hover {
+  transform: translateY(-4px);
+  border-color: #b9d2f5;
+  box-shadow: 0 10px 25px rgba(40, 101, 199, 0.08);
+}
+
+.algorithm-flow .flow-item b {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 12px;
+
+  border-radius: 50%;
+  background: #edf4ff;
+  color: #2865c7;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.algorithm-flow .flow-item h3 {
+  margin: 0 0 7px;
+  color: #273a55;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.algorithm-flow .flow-item p {
+  margin: 0;
+  color: #8490a3;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.algorithm-flow .arrow {
+  text-align: center;
+  color: #2865c7;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* =========================================================
+   ROLLING HASH FORMULA
+   ========================================================= */
+
+.formula {
+  position: relative;
+  overflow: hidden;
+
+  background: linear-gradient(
+    135deg,
+    #0d2a5b 0%,
+    #12376f 100%
+  );
+
+  padding: 32px 36px;
+  border-radius: 16px;
+  color: #ffffff;
+  margin-bottom: 55px;
+
+  box-shadow: 0 12px 30px rgba(13, 42, 91, 0.12);
+}
+
+.formula::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  right: -70px;
+  top: -90px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.formula > span {
+  display: block;
+  color: #a9c8f4;
+  font-size: 10px;
+  letter-spacing: 1.7px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.formula h2 {
+  position: relative;
+  z-index: 1;
+
+  margin: 0 0 14px;
+
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
+.formula > p {
+  position: relative;
+  z-index: 1;
+
+  max-width: 800px;
+  margin: 0;
+
+  color: #bdcde7;
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+/* Formula B / M / K */
+
+.formula-details {
+  position: relative;
+  z-index: 1;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+
+  margin-top: 25px;
+}
+
+.formula-details > div {
+  padding: 15px 17px;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 10px;
+}
+
+.formula-details strong {
+  display: block;
+  margin-bottom: 4px;
+
+  color: #ffffff;
+  font-size: 17px;
+}
+
+.formula-details span {
+  display: block;
+
+  color: #a9bddd;
+  font-size: 10px;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+/* =========================================================
+   SECTION HEADINGS
+   ========================================================= */
+
+.section-heading {
+  margin-bottom: 20px;
+}
+
+.section-heading > span {
+  display: block;
+  color: #2865c7;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+}
+
+.section-heading h2 {
+  margin: 0;
+
+  color: #182b49;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+/* =========================================================
+   ALGORITHM PROCESS SECTION
+   ========================================================= */
+
+.algorithm-section {
+  margin-bottom: 55px;
+}
+
+/*
+   Each algorithm step
+*/
+
+.algorithm-step {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 20px;
+
+  padding: 25px 0;
+
+  border-bottom: 1px solid #e4e9f1;
+}
+
+.algorithm-step:first-of-type {
+  border-top: 1px solid #e4e9f1;
+}
+
+.algorithm-step:last-child {
+  border-bottom: none;
+}
+
+.step-number {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #edf4ff;
+  color: #2865c7;
+
+  border-radius: 11px;
+
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.algorithm-step h3 {
+  margin: 1px 0 8px;
+
+  color: #2d405d;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.algorithm-step p {
+  max-width: 850px;
+  margin: 0;
+
+  color: #78869b;
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+/* Code / formula examples */
+
+.code-example {
+  display: inline-block;
+
+  margin-top: 13px;
+  padding: 9px 13px;
+
+  background: #f1f5fa;
+  border: 1px solid #e1e7ef;
+  border-radius: 7px;
+}
+
+.code-example code {
+  color: #2865c7;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 11px;
+}
+
+/* =========================================================
+   COMPLEXITY SECTION
+   ========================================================= */
+
+.complexity-section {
+  margin-bottom: 55px;
+}
+
+.complexity {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.complexity-card {
+  min-height: 145px;
+  padding: 23px;
+
+  background: #ffffff;
+  border: 1px solid #e1e7ef;
+  border-radius: 13px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.complexity-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 9px 24px rgba(40, 101, 199, 0.08);
+}
+
+.complexity-card > span {
+  display: block;
+
+  color: #7c899c;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+}
+
+.complexity-card strong {
+  display: block;
+
+  margin-top: 9px;
+
+  color: #2865c7;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.complexity-card p {
+  margin: 9px 0 0;
+
+  color: #8792a3;
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+/* =========================================================
+   IMPLEMENTATION DETAILS
+   ========================================================= */
+
+.implementation-card {
+  padding: 30px;
+
+  background: #ffffff;
+  border: 1px solid #e0e6ef;
+  border-radius: 15px;
+
+  box-shadow: 0 8px 24px rgba(31, 50, 81, 0.04);
+}
+
+.implementation-card > span {
+  display: block;
+
+  color: #2865c7;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+
+  margin-bottom: 7px;
+}
+
+.implementation-card h2 {
+  margin: 0 0 24px;
+
+  color: #182b49;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+/* Configuration grid */
+
+.implementation-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.implementation-grid > div {
+  min-height: 82px;
+  padding: 16px;
+
+  background: #f7f9fc;
+  border: 1px solid #e7ebf2;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.implementation-grid small {
+  display: block;
+
+  color: #8a96a8;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+
+  margin-bottom: 7px;
+}
+
+.implementation-grid strong {
+  display: block;
+
+  color: #30435f;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+  .algorithm-container {
+    width: 92%;
+  }
+
+  .algorithm-flow {
+    grid-template-columns:
+      repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .algorithm-flow .arrow {
+    display: none;
+  }
+
+  .algorithm-flow .flow-item {
+    min-height: 120px;
+  }
+
+  .implementation-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+  .algorithm-container {
+    width: 92%;
+    padding: 38px 0 60px;
+  }
+
+  .algorithm-container > .algorithm-header > h1 {
+    font-size: 31px;
+  }
+
+  .algorithm-intro {
+    font-size: 13px;
+  }
+
+  .algorithm-flow {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+
+  .algorithm-flow .arrow {
+    display: block;
+    transform: rotate(90deg);
+    height: 15px;
+    font-size: 17px;
+  }
+
+  .algorithm-flow .flow-item {
+    min-height: 105px;
+  }
+
+  .formula {
+    padding: 25px 22px;
+    border-radius: 13px;
+  }
+
+  .formula h2 {
+    font-size: 23px;
+  }
+
+  .formula-details {
+    grid-template-columns: 1fr;
+  }
+
+  .algorithm-step {
+    grid-template-columns: 42px 1fr;
+    gap: 14px;
+    padding: 21px 0;
+  }
+
+  .step-number {
+    width: 36px;
+    height: 36px;
+  }
+
+  .algorithm-step h3 {
+    font-size: 14px;
+  }
+
+  .algorithm-step p {
+    font-size: 11px;
+  }
+
+  .complexity {
+    grid-template-columns: 1fr;
+  }
+
+  .implementation-card {
+    padding: 23px 20px;
+  }
+
+  .implementation-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 430px) {
+
+  .algorithm-container > .algorithm-header > h1 {
+    font-size: 27px;
+  }
+
+  .formula h2 {
+    font-size: 21px;
+  }
+
+  .section-heading h2 {
+    font-size: 22px;
+  }
+}

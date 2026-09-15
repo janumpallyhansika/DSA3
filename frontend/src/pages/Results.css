@@ -1,0 +1,186 @@
+.results-page {
+  min-height: 100vh;
+  background: #f5f8fd;
+}
+
+.results-container {
+  width: 88%;
+  max-width: 1180px;
+  margin: auto;
+
+  padding: 55px 0 80px;
+}
+
+.results-container > span {
+  color: #2865c7;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+}
+
+.results-container h1 {
+  color: #182b49;
+  font-size: 40px;
+  margin: 10px 0 5px;
+}
+
+.result-file {
+  color: #7c8798;
+  font-size: 12px;
+}
+
+.score-card {
+  margin-top: 35px;
+
+  background: white;
+
+  border: 1px solid #e0e6ef;
+
+  border-radius: 15px;
+
+  padding: 35px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+}
+
+.score {
+  width: 145px;
+  height: 145px;
+
+  border-radius: 50%;
+
+  background: #edf4ff;
+
+  border: 10px solid #d9e8ff;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #2865c7;
+
+  flex-shrink: 0;
+}
+
+.score strong {
+  font-size: 29px;
+}
+
+.score small {
+  color: #7f8ca0;
+  font-size: 10px;
+}
+
+.score-card h2 {
+  color: #2d405b;
+  font-size: 22px;
+}
+
+.score-card p {
+  color: #788497;
+  font-size: 12px;
+}
+
+.score-card div > small {
+  color: #98a2b1;
+  font-size: 10px;
+}
+
+.matches {
+  margin-top: 55px;
+}
+
+.matches h2 {
+  color: #2c405c;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+.match {
+  background: white;
+
+  border: 1px solid #e0e6ef;
+
+  border-radius: 9px;
+
+  padding: 17px 20px;
+
+  margin-bottom: 10px;
+
+  display: grid;
+
+  grid-template-columns: 50px 1fr 80px;
+
+  align-items: center;
+}
+
+.match > span {
+  color: #a6afbd;
+  font-size: 11px;
+}
+
+.match strong {
+  display: block;
+  color: #405067;
+  font-size: 12px;
+}
+
+.match small {
+  display: block;
+  color: #8c96a5;
+  font-size: 9px;
+  margin-top: 4px;
+}
+
+.match > b {
+  text-align: right;
+  color: #2865c7;
+  font-size: 17px;
+}
+
+.result-button {
+  display: inline-block;
+
+  margin-top: 25px;
+
+  padding: 13px 20px;
+
+  border-radius: 8px;
+
+  background: #2865c7;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 11px;
+
+  font-weight: 800;
+}
+
+.no-result {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.no-result h1 {
+  color: #263952;
+}
+
+.no-result p {
+  color: #7b8799;
+}
+
+@media (max-width: 650px) {
+
+  .score-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}

@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  font-family:
+    Inter,
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  background: #f5f8fd;
+
+  color: #172844;
+}
+
+button,
+input {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: #2865c7;
+  color: white;
+}
